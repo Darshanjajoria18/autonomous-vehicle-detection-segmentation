@@ -1,14 +1,22 @@
-# Autonomous-vehicle-detection-segmentation
-OBJECT DETECTION YOLO
-1.) Defined the YOLOv5 model architecture, leveraging its capabilities for real-time object detection
-2.) Conducted the training process with built-in checkpointing to save the best-performing weights, ensuring optimal model performance.
+# Autonomous Vehicle Detection and Segmentation
 
-SEMANTIC SEGMENTATION OF INDIAN ROADS USING DEEPLABV3+ ARCHITECTURE
-1.) USED THE IDD DATASET (BY IIIT HYDERABAD).
-2.) MADE TRAINING PIPELINE USING THE DATA API OF TENSORFLOW.
-FIRST LOADED ALL THE ADDRESSES OF IMAGES AND MASKS.
-MADE A FUNCTION FOR READING, RESIZING AND NORMALIZING THE IMAGES
-MADE A tf.data.Dataset OBJECT AND MADE A TRAIN AND VAL DATASET SO AS TO LOAD THE IMAGES AND MASKS IN BATCHES.
-3.) DEFINED THE MODEL ARCHITECTURE - USED XCEPTION PRETRAINED MODEL AS THE BASE MODEL.
-4.) CARRIED OUT THE TRAINING PROCESS AND MADE CHECKPOINTER TO SAVE BEST WEIGHTS ONLY.
-5.) MADE PREDICTION ON CAMPUS ROADS OF IIT BHU FOR INFERENCE AND THEN DEPLOYED THE MODEL INTO THE AUTONOMOUS VEHICLE OF TEAM AVERERA.
+## Overview
+This project focuses on implementing object detection and semantic segmentation for autonomous vehicles. The primary algorithms utilized are YOLOv5 for object detection and DeepLabV3+ for semantic segmentation.
+
+## Object Detection with YOLOv5
+1. **Model Architecture**: Defined the YOLOv5 model architecture, leveraging its capabilities for real-time object detection.
+2. **Training Process**: Conducted the training process with built-in checkpointing to save the best-performing weights, ensuring optimal model performance.
+
+## Semantic Segmentation of Indian Roads Using DeepLabV3+
+1. **Dataset**: Used the Indian Driving Dataset (IDD) provided by IIIT Hyderabad.
+2. **Training Pipeline**: 
+   - Developed a training pipeline using TensorFlow’s Data API.
+   - Loaded addresses of images and masks.
+   - Created functions for reading, resizing, and normalizing images.
+   - Constructed a `tf.data.Dataset` object for loading images and masks in batches.
+3. **Model Architecture**: Defined the model architecture using the Xception pre-trained model as the base.
+4. **Training Process**: Executed the training process and implemented checkpointing to save the best weights only.
+5. **Inference and Deployment**: Made predictions on campus roads at IIT BHU and deployed the model into the autonomous vehicle of Team AVERERA.
+
+## Conclusion
+This project integrates advanced computer vision techniques for real-time object detection and road segmentation, contributing to the development of autonomous vehicle technology.
