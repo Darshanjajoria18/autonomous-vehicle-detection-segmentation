@@ -1,2 +1,14 @@
-# autonomous-vehicle-detection-segmentation
-This repository contains implementations of advanced object detection and semantic segmentation models for autonomous vehicles, utilizing the YOLO and DeepLabV3+ architectures. The models are trained on the Indian Driving Dataset to enhance vehicle perception and navigation capabilities in real-time scenarios.
+# Autonomous-vehicle-detection-segmentation
+OBJECT DETECTION YOLO
+1.) Defined the YOLOv5 model architecture, leveraging its capabilities for real-time object detection
+2.) Conducted the training process with built-in checkpointing to save the best-performing weights, ensuring optimal model performance.
+
+SEMANTIC SEGMENTATION OF INDIAN ROADS USING DEEPLABV3+ ARCHITECTURE
+1.) USED THE IDD DATASET (BY IIIT HYDERABAD).
+2.) MADE TRAINING PIPELINE USING THE DATA API OF TENSORFLOW.
+FIRST LOADED ALL THE ADDRESSES OF IMAGES AND MASKS.
+MADE A FUNCTION FOR READING, RESIZING AND NORMALIZING THE IMAGES
+MADE A tf.data.Dataset OBJECT AND MADE A TRAIN AND VAL DATASET SO AS TO LOAD THE IMAGES AND MASKS IN BATCHES.
+3.) DEFINED THE MODEL ARCHITECTURE - USED XCEPTION PRETRAINED MODEL AS THE BASE MODEL.
+4.) CARRIED OUT THE TRAINING PROCESS AND MADE CHECKPOINTER TO SAVE BEST WEIGHTS ONLY.
+5.) MADE PREDICTION ON CAMPUS ROADS OF IIT BHU FOR INFERENCE AND THEN DEPLOYED THE MODEL INTO THE AUTONOMOUS VEHICLE OF TEAM AVERERA.
